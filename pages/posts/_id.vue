@@ -44,7 +44,7 @@ export default {
     
     async asyncData( { $axios , params }) {
         const post = await $axios.$get(`http://localhost:3000/api/post/${params.id}`)
-        
+        // console.log(post)
         
         //const  editorContent = this.getData(post._source.content)
         const editorContent = {

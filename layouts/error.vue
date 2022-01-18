@@ -3,10 +3,15 @@
     <h1 v-if="error.statusCode === 404">
       {{ pageNotFound }}
     </h1>
+    
     <h1 v-else>
       {{ otherError }}
     </h1>
-    <NuxtLink to="/"> Home page </NuxtLink>
+    <NuxtLink class="link" to="/">
+    
+    
+     Home page </NuxtLink>
+     <img src="@/assets/img/cryptopunk_6046.webp" alt="">
   </v-app>
 </template>
 
@@ -22,8 +27,8 @@ export default {
   },
   data() {
     return {
-      pageNotFound: '404 Not Found',
-      otherError: 'An error occurred',
+      pageNotFound: '404 Нот фаунде. Можно и покурить',
+      otherError: 'Эн еррор оккуред. Можно и перекурить',
     }
   },
   head() {
@@ -39,5 +44,18 @@ export default {
 <style scoped>
 h1 {
   font-size: 20px;
+}
+
+h1, img, .link {
+  
+  margin: 10px auto 20px;
+  display: block;
+  
+}
+
+img {
+  margin-bottom: 40px;
+  width: auto;
+  height: auto;
 }
 </style>

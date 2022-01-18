@@ -9,5 +9,6 @@
 <script>
 export default {
   name: 'InspirePage',
+  // middleware: 'checkAuth',
 }
 </script>

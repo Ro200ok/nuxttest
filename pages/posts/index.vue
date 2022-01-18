@@ -16,6 +16,7 @@
 <script>
 export default {
   name: 'InspirePage',
+  // middleware: 'checkAuth',
   data: function(){
     return {
       posts:[]
@@ -29,7 +30,10 @@ export default {
   methods:{},
   async asyncData({ $axios }) {
         const posts = await   $axios.$get('http://localhost:3000/api/posts')
-     return { posts };
+        
+        // console.log(posts)
+     
+        return { posts };
     /*
       const posts = await $axios.$get('http://elastic:MagicPatriotgorodPeremens876tghui@new-el.fabricmedia.ru:9271/posts/_search').then(resp => {
 

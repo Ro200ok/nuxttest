@@ -3,7 +3,7 @@ import colors from 'vuetify/es5/util/colors'
 export default {
 
   ssr: true,
-  //mode: 'universal' ,
+  
   target:'server',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -21,6 +21,9 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
+
+  // router: {
+  //   middleware: ['checkAuth']  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -42,6 +45,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    // '@nuxtjs/auth-next'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
